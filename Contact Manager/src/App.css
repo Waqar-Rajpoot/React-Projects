@@ -13,6 +13,7 @@ h1{
     padding: 20px;
     text-align: center;
     font-weight: bolder;
+    box-shadow: 2px 2px 8px gray;
 }
 form{
     border: 1px solid rgb(194, 177, 157);
@@ -23,8 +24,7 @@ form{
     background-color: bisque;
     border-radius: 20px;
     box-shadow: 5px 5px 8px gray;
-    margin-top: 10px;
-    margin-bottom: 5%;
+    margin: 2% 0;
     
 }
 form input{
@@ -64,7 +64,7 @@ form h2{
     width: 100%;
     background-color: bisque;
     box-shadow: 5px 5px 8px gray;
-    margin-top: 10px;
+    margin: 2% 0;
     padding: 20px;
     display: flex;
     justify-content: space-around;
@@ -75,5 +75,4 @@ form h2{
 .finalList{
     position: relative;
     top: 50%;
-
 }
