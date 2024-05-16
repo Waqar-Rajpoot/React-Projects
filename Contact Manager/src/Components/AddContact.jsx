@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const AddContact = () => {
+const AddContact = ({addContact}) => {
     const [contactData, setContactData] = useState({name: "", email: ""});
 
     const handler = (e) => {
@@ -11,16 +11,26 @@ const AddContact = () => {
         }
     }
 
+    const submitHandler = (e) => {
+      e.preventDefault();
+      if (contactData.name === "" || contactData.email === "") {
+        alert("Please fill all details!")
+      }else{
+        addContact(contactData);
+        setContactData({name: "", email: ""});
+      }
+    }
+
   return (
     <div>
       <form action="">
         <h2>Add Contacts</h2>
         <label htmlFor="">Enter Your Name</label><br />
-        <input type="text" name='name' value={contactData.name} onChange={handler}/><br />
+        <input type="text" name='name' value={contactData.name} onChange={handler} required/><br />
         <label htmlFor="">Enter Your Email</label><br />
-        <input type="email" name='email' value={contactData.email} onChange={handler}/><br />
+        <input type="email" name='email' value={contactData.email} onChange={handler} required/><br />
 
-        <button className='btn'>Add Task</button>
+        <button className='btn' onClick={submitHandler}>Add Task</button>
       </form>
     </div>
   )

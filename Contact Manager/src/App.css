@@ -18,12 +18,13 @@ form{
     border: 1px solid rgb(194, 177, 157);
     padding: 30px;
     width: 40%;
-    position: absolute;
+    position: relative;
     left: 30%;
     background-color: bisque;
     border-radius: 20px;
     box-shadow: 5px 5px 8px gray;
     margin-top: 10px;
+    margin-bottom: 5%;
     
 }
 form input{
@@ -58,4 +59,21 @@ form h2{
     color: green;
     margin-bottom: 20px;
     font-size: 35px;
+}
+.contactList{
+    width: 100%;
+    background-color: bisque;
+    box-shadow: 5px 5px 8px gray;
+    margin-top: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 22px;
+    font-weight: bold;
+    color: blue;
+}
+.finalList{
+    position: relative;
+    top: 50%;
+
 }
